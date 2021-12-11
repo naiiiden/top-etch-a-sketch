@@ -1,0 +1,42 @@
+@import "./general";
+
+.title {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+button {
+    padding: .25rem 1rem;
+    border: none;
+    background-color: #fff;
+    border: 2px solid magenta;
+    border-radius: 5rem;
+    font-weight: bold;
+    color: magenta;
+}
+
+h1 {
+    text-align: center;
+    padding: .25rem;
+    color: #000;
+}
+
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+  
+  #container {
+    width: 98%;
+    display: grid;
+    grid-gap: 0;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+  }
+  
+  .grid-item {
+    padding: .385rem;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
