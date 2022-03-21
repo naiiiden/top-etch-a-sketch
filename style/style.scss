@@ -28,15 +28,18 @@ h1 {
   }
   
   #container {
-    width: 100%;
+    width: 50rem;
+    height: 50rem;
     display: grid;
     grid-gap: 0;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
+    background: #fff;
+    border: 1rem solid yellow;
+    border-radius: 1rem;
   }
   
   .grid-item {
-    padding: .385rem;
-    border: 1px solid #ddd;
+    border: 1px solid rgb(223, 223, 223);
     text-align: center;
   }
